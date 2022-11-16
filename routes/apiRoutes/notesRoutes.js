@@ -14,7 +14,7 @@ router.post('/notes', async (req, res) => {
 
     res.json(allNotes);
 })
-
+//TODO: finish delete
 router.delete('/notes/:id', async (req, res) => {
     var deleteOneNote = await deleteNote(req.body)
 
